@@ -1,18 +1,38 @@
 import React from 'react'
-import './signup.css';
+import './Signup.css';
+import { FaUser } from "react-icons/fa";
+import { IoMail } from "react-icons/io5";
+import { RiLockPasswordFill } from "react-icons/ri";
+
+
 const signup = () => {
   return (
-    <div>
-   <form>
+    <div className='A'>
+      <form>
+        <h1>Login</h1>
+        <div className="inp-box">
+          <input type="email" placeholder="abc@mail" required></input>
+          <IoMail />
+        </div>
+        <div className="inp-box">
+          <input type="text" placeholder="U-name" required></input>
+          <FaUser />
+        </div>
+        <div className="inp-box">
+          <input type="password" placeholder="*****" required></input>
+          <RiLockPasswordFill />
+        </div>
 
-        <label for="email">email</label>
-        <input type="email" placeholder="yourmailid" id="email" name="email"></input>
+        <div className="remember-forgot">
+          <label><input type="checkbox" />Remember me</label>
+        </div>
 
-        <label for="password">Password</label>
-        <input type="password" placeholder="8-leng" id="password" name="password"></input>
+        <button type="submit">Login</button>
+        <div className="no-acc">
+            <p>Don't have acc?<a href="#">Register</a></p>
+        </div>
 
-        <button>Log In</button>
-   </form>
+      </form>
    </div>
   )
 }

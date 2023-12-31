@@ -1,11 +1,11 @@
-import signup from './Components/signup/signup';
+import Signup from './Components/signup/Signup';
 
 function App() {
   return (
     <div >
-      <signup />
+      <Signup />
     </div>
   );
 }
 
-export default App;
+export default App;  
